@@ -1,0 +1,56 @@
+.center-outer {
+	display: table;
+	margin: auto;
+	border-spacing: 100px;
+}
+
+@keyframes ossilate {
+    50% {
+        transform: scale(0.7);
+    }
+	100% {
+        transform: scale(1.0);
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+	100% {
+        transform: rotate(359deg);
+    }
+}
+
+.ossil {
+	animation-name: ossilate;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+.center-inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#spinny {
+	animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+body, html, .center-inner, .center-outer {
+  height: 100%;
+}
+
+.dancer {
+	opacity: 0;
+}
+.wrapper {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+	margin-left: -300px;
+    margin-top: -300px;
+	z-index: -1;
+}
