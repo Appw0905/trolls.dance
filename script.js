@@ -7,6 +7,7 @@ site.init = function() {
     site.face = document.getElementById("img");
     site.dancer1 = document.getElementById("dancer1");
     site.dancer2 = document.getElementById("dancer2");
+    site.spinny = document.getElementById("spinnyClock");
     site.dancers.push(site.dancer1);
     site.dancers.push(site.dancer2);
     site.dancer1.style.opacity = "0";
@@ -15,6 +16,7 @@ site.init = function() {
     document.body.scroll = "no";
     site.click = 0;
     site.play = true;
+    site.dir = true;
     if (stuff[1] == 'autoplay') {
         site.face.className = "";
         site.dancers.push(site.face);
@@ -38,6 +40,19 @@ site.loop = function() {
         }
         setTimeout(site.dance, (Math.floor(Math.random() * 40) + 0)*10)
     }
+    if (site.dir) {
+        site.dir = false;
+        if (site.spinny.id == "spinnyClock") {
+            site.spinny.id = "spinnyCClock";
+        } else if (site.spinny.id == "spinnyCClock") {
+            site.spinny.id = "spinnyClock";
+        }
+        setTimeout(site.dirtrue, (Math.floor(Math.random() * 100) + 40)*100);
+    }
+}
+
+site.dirtrue = function() {
+    site.dir = true;
 }
 
 site.dance = function() {

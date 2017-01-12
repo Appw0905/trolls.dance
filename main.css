@@ -12,12 +12,21 @@
         transform: scale(1.0);
     }
 }
-@keyframes spin {
+@keyframes spinClock {
     0% {
         transform: rotate(0deg);
     }
 	100% {
         transform: rotate(359deg);
+    }
+}
+
+@keyframes spinCClock {
+    0% {
+        transform: rotate(359deg);
+    }
+	100% {
+        transform: rotate(0deg);
     }
 }
 
@@ -32,8 +41,15 @@
 	vertical-align: middle;
 }
 
-#spinny {
-	animation-name: spin;
+#spinnyCClock {
+	animation-name: spinCClock;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#spinnyClock {
+	animation-name: spinClock;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 	animation-timing-function: linear;
