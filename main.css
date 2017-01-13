@@ -66,6 +66,13 @@ html, body {
   padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6, body, p, a {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+a {
+    text-decoration:none;
+	color: inherit;
+}
 .dancer {
 	opacity: 0;
 }
