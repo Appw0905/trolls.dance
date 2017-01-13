@@ -76,11 +76,16 @@ a {
 .dancer {
 	opacity: 0;
 }
-.wrapper {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-	margin-left: -300px;
-    margin-top: -300px;
+.centered {
+	position: absolute;
 	z-index: -1;
+	left: 50%;
+	top: 50%;
+	margin-left: -300px;
+	margin-top: -300px;
+}
+#bottomBar {
+	text-align: center;
+	background-color: #515151;
+	padding: 10px 0 0 0
 }
