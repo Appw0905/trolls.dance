@@ -12,8 +12,6 @@ site.init = function() {
     site.dancers.push(site.dancer2);
     site.dancer1.style.opacity = "0";
     site.dancer2.style.opacity = "0";
-    document.documentElement.style.overflow = 'hidden';
-    document.body.scroll = "no";
     site.click = 0;
     site.play = true;
     site.dir = true;

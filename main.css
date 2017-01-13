@@ -60,6 +60,12 @@ body, html, .center-inner, .center-outer {
   height: 100%;
 }
 
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .dancer {
 	opacity: 0;
 }
